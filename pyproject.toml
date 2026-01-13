@@ -1,0 +1,23 @@
+[project]
+name = "assistente-cobranca-whatsapp"
+version = "0.1.0"
+description = "Assistente RPA para cobrança automática via Whatsapp"
+authors = [
+    {name = "Nicolas Morche",email = "nickmorche@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4 (>=4.14.3,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "assistente_cobranca_whatsapp", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+selenium = "^4.17.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
